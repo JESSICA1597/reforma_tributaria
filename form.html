@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aprendendo Formulário</title>
+</head>
+<body>
+    <header></header>
+    <main>
+        <form action="submit-review" method="post">
+            <fieldset>
+            <legend>SEUS DADOS</legend>
+            <label for="nome">Seu nome: </label>
+            <input type="text" id="nome" name="nome" required>
+            <label for="email">Seu email: </label>
+            <input type="email" id="email" name="email">
+            <label for="senha">Senha: </label>
+            <input type="password" id="senha" name="senha" required minlength="8">
+            <label for="generos">Gêneros</label>
+            <select name="generos" id="generos">
+                <option value="acao">Ação</option>
+                <option value="comedia">Comédia</option>
+                <option value="drama">Drama</option>
+                <option value="ficcao">Ficção Científica</option>
+                <option value="terror">Terror</option>
+
+            </select>
+
+            </fieldset>
+            <fieldset>
+            <legend>Recomenda?</legend>
+            <input type="radio" id="rec_sim" name="recomendacao" value="sim">
+            <label for="rec_sim">Sim</label>
+            <input type="radio" id="rec_nao" name="recomendacao" value="nao">
+            <label for="rec_nao">Não</label>
+            <br>
+
+            <!--Multipla escolha com Checkbox-->
+            <label>Onde assistiu?</label>
+            <input type="checkbox" id="cinema" name="plataforma" value="cinema">
+            <label for="cinema">Cinema</label>
+            <input type="checkbox" id="stream" name="plataforma" value="streaming">
+            <label for="stream">Streaming</label>
+            <br>
+            <label for="data">Data que assistiu</label>
+            <input type="date" id="data" name="data">
+            <label for="poster">Pôster do Filme</label>
+            <input type="file" id="poster" name="poster" accept="image/png, image/jpeg">
+            </fieldset>
+            <button type="submit">Enviar</button>
+            <button type="reset">Limpar formulário</button>
+
+        </form>
+        
+    </main>
+    <footer></footer>
+</body>
+</html>
